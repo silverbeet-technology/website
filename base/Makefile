@@ -4,6 +4,8 @@ SSH_USER=luser
 SSH_HOST=hector
 SSH_PATH=/home/luser/docker/silverbeet.tech/html
 
+##############################################################################
+
 define git-hash
 	git log -1 --pretty=format:%h > .current_build
 endef
@@ -13,14 +15,16 @@ BUILD_STATUS=1
 ifneg ($(BUILD_STATUS),2)
  echo "ERR: Git status not clean, commit code and rerun"
  exit 1
-else 
- echo "Git status is clean, starting build" 
+else
+ echo "Git status is clean, starting build"
 endef
 
 define code-deploy
 	echo "Deploying code from: ${BUILD_OUTPUT}"
 	rsync -avz --delete "${BUILD_OUTPUT}/" ${SSH_USER}@${SSH_HOST}:${SSH_PATH}
 endef
+
+##############################################################################
 
 list:
 	@echo "All commands:"

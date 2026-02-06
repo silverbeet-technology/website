@@ -13,11 +13,51 @@ import { Icon } from "astro-icon/components";
 				<h2 class="text-lg font-semibold text-gray-900 mb-4">
 					Silverbeet Tech
 				</h2>
-				<p class="text-gray-600">
-					5830 East 2nd Street, STE 7000 #32421<br />
-				  Casper, Wyoming 82609, USA
-				</p>
+				
+				<ul class="space-y-2">
+					<li>
+						<a
+							href="https://www.openstreetmap.org/search?query=5830+East+2nd+Street%2C+Casper%2C+Wyoming+82609&zoom=5&minlon=-138.03222656250003&minlat=20.715015145512098&maxlon=-53.65722656250001&maxlat=52.02545860348814#map=18/42.844835/-106.235207"
+							class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Our location on OpenStreetMap (opens in new tab)"
+						>
+							<Icon
+								name="tabler:world"
+								class="w-5 h-5"
+								aria-hidden="true"
+							/>
+							<span>
+								<p class="text-gray-600">
+								5830 East 2nd Street, STE 7000<br />
+							  Casper, Wyoming 82609, USA
+							  </p>
+							</span>
+							</a>
+					</li>
+					<li>
+						<a
+							href="https://www.whitepages.com/phone/1-307-456-7890"
+							class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Our phone number on Whitepages (opens in new tab)"
+						>
+							<Icon
+								name="tabler:phone"
+								class="w-5 h-5"
+								aria-hidden="true"
+							/>
+							<span>
+								<p class="text-gray-600">
+								(307) 456-7890 (fixme)
+							  </p>
+							</span>
+							</a>
+					</li>
 			</div>
+			
 			<div>
 				<h2 class="text-lg font-semibold text-gray-900 mb-4">Links</h2>
 				<ul class="space-y-2">
