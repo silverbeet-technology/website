@@ -4,28 +4,9 @@ import { Icon } from "astro-icon/components";
 ---
 
 <section id="features" class="max-w-6xl mx-auto px-4 py-20">
-	<!--<ScrollReveal client:idle delay={0.1}>
+	<ScrollReveal client:idle delay={0.1}>
     <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Services</h2>
-  </ScrollReveal>-->
-  <ul>
-  <p>
-	Solutions we provide. Linux installation configuration hardening specialized
-	server solution customized desktop solution Open source applications
-	webservers nginx, apache, lighty, caddy * with free SSL certificats set to
-	autorenew before experation (using Let's Encrypt) databases mysql, mariadb,
-	postgres DNS servers Unbound Pihole, DNS Athe... (???) for adblocking chat
-	servers everything from IRC to Matrix * rocketchat, mattermost uptime
-	montitoring supporting internal and external systems, with a live page
-	displaying at https://status.your_domain.com/ * setting up thresholds and
-	notifications capacity planning who much do you need to do what you need to do
-	* could this better served via a cloud solution versus a physical solution?
-	NOTICE I list these solutions as 'recommended' since if people don't see the
-	exact thing you're looking for, I would suggest they reach out and let me know
-	what you're trying to accomplish. I suspect ideas from the above list would
-	assist in archiving our goals. Failing that, we can work with what they have
-	and I can make it work.
-	</p>
-	</ul>
+  </ScrollReveal>
 
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 		
@@ -149,5 +130,69 @@ import { Icon } from "astro-icon/components";
 				</p>
 			</a>
 		</ScrollReveal>
+		
+		<ScrollReveal client:idle delay={0.7} scale={true}>
+			<a
+				href="/example"
+				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+			>
+				<div
+					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+				>
+					<Icon
+						name="tabler:lock"
+						class="w-6 h-6 text-gray-900"
+						aria-hidden="true"
+					/>
+				</div>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">Security</h3>
+				<p class="text-gray-600">
+				  I started my tech career researching security with the aim of setting up servers and services as securely as I could, but it's an ongoing process that is always changing. From doing basic pen-testing scans to configuring web servers and other network services to behave and protect; it's all part of the fun.	
+				</p>
+			</a>
+		</ScrollReveal>
+		
+		<ScrollReveal client:idle delay={0.7} scale={true}>
+			<a
+				href="/example"
+				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+			>
+				<div
+					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+				>
+					<Icon
+						name="tabler:blocks"
+						class="w-6 h-6 text-gray-900"
+						aria-hidden="true"
+					/>
+				</div>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">Builds/Continous integration</h3>
+				<p class="text-gray-600">
+					Builds with continuous integration is a DevOps development practice where developers regularly merge their code changes into a central repository. A pipeline is setup to provide the steps and access for a service like Jenkins, GitHub Actions or Azure CI/CD data pipelines provide this framework.
+				</p>
+			</a>
+		</ScrollReveal>
+		
+		<ScrollReveal client:idle delay={0.7} scale={true}>
+			<a
+				href="/example"
+				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+			>
+				<div
+					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+				>
+					<Icon
+						name="tabler:exclamation-circle"
+						class="w-6 h-6 text-gray-900"
+						aria-hidden="true"
+					/>
+				</div>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">But wait,there's more...</h3>
+				<p class="text-gray-600">
+					One size does not fit all, and I'm cognizant of the fact that there are virtually infinite ways to solve technical issues, which is why I'm able to take a projects requirements and break it down to steps we can take. Let me know what you're trying to accomplish, from there we will assist in archiving your goals.
+				</p>
+			</a>
+		</ScrollReveal>
+		
 	</div>
 </section>
