@@ -54,7 +54,9 @@ build-verbose:
 
 prod:
 	@$(call git-hash)
-	npm run prettier
+	#npm run prettier
+	npm run format
+	npm run format:check
 	npm run build
 	@$(call code-deploy)
 
