@@ -7,7 +7,9 @@ SSH_PATH=/home/luser/docker/silverbeet.tech/html
 ##############################################################################
 
 define git-hash
-	git log -1 --pretty=format:%h > .current_build
+	#git log -1 --pretty=format:%h > .current_build
+	echo -n "CURRENT_BUILD=" > .env
+	git log -1 --pretty=format:%h >> .env
 endef
 
 define build-status
