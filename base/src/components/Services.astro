@@ -5,12 +5,62 @@ import { Icon } from "astro-icon/components";
 
 <section id="features" class="max-w-6xl mx-auto px-4 py-20">
 	<ScrollReveal client:idle delay={0.1}>
-    <h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Services</h2>
-  </ScrollReveal>
+		<h2 class="text-4xl font-bold text-gray-900 text-center mb-12">Services</h2>
+	</ScrollReveal>
 
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-		
 		<ScrollReveal client:idle delay={0.2} scale={true}>
+			<div
+				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+			>
+				<div
+					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+				>
+					<Icon
+						name="tabler:lock"
+						class="w-6 h-6 text-gray-900"
+						aria-hidden="true"
+					/>
+				</div>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">Security</h3>
+				<p class="text-gray-600">
+					I started my tech career researching security with the aim of setting
+					up servers and services as securely as I could, but it's an ongoing
+					process that is always changing. From doing basic pen-testing scans to
+					configuring web servers and other network services to behave and
+					protect; it's all part of the fun.
+				</p>
+			</div>
+		</ScrollReveal>
+
+		<ScrollReveal client:idle delay={0.3} scale={true}>
+			<div
+				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+			>
+				<div
+					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+				>
+					<Icon
+						name="tabler:blocks"
+						class="w-6 h-6 text-gray-900"
+						aria-hidden="true"
+					/>
+				</div>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">
+					Builds/Continous integration
+				</h3>
+				<p class="text-gray-600">
+					Builds with continuous integration is a DevOps development practice
+					where developers regularly merge their code changes into a central
+					repository. A pipeline is setup to provide the steps and access for a
+					service like Jenkins, GitHub Actions or Azure CI/CD data pipelines
+					provide this framework. A build, or artifact, is produced, which can
+					then be reviewed.
+				</p>
+			</div>
+		</ScrollReveal>
+
+		<ScrollReveal client:idle delay={0.4} scale={true}>
 			<div
 				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
 			>
@@ -25,12 +75,15 @@ import { Icon } from "astro-icon/components";
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">Docker</h3>
 				<p class="text-gray-600">
-					Running applications in containers like Docker provide flexibility to explore many types of software, and true infrastructure as code (IaC) where services can be saved and moved with minimal effort. Reproducability and scale are side effects.
+					Running applications in containers like Docker provide flexibility to
+					explore many types of software, and true infrastructure as code (IaC)
+					where services can be saved and moved with minimal effort.
+					Reproducability and scale are side effects.
 				</p>
 			</div>
 		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.3} scale={true}>
+
+		<ScrollReveal client:idle delay={0.5} scale={true}>
 			<div
 				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
 			>
@@ -43,14 +96,22 @@ import { Icon } from "astro-icon/components";
 						aria-hidden="true"
 					/>
 				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">SSL Certificates</h3>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">
+					SSL Certificates
+				</h3>
 				<p class="text-gray-600">
-					Secure socket layer (SSL) certificates provide encryption, and thus security, but they also provide important information for verifying the owner of a website while encrypting web traffic with SSL/TLS
+					Secure socket layer (SSL) certificates provide encryption, and thus
+					security, but they also provide important information for verifying
+					the owner of a website while encrypting web traffic with SSL/TLS.
+					Buying SSL certificates used to be relatively expensive and require
+					manual updating when they expire. New projects such as Let's Encrypt
+					allow anyone to install free SSL certificates which are renewed
+					automatically.
 				</p>
 			</div>
 		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.4} scale={true}>
+
+		<ScrollReveal client:idle delay={0.6} scale={true}>
 			<div
 				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
 			>
@@ -64,13 +125,17 @@ import { Icon } from "astro-icon/components";
 					/>
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">Windows</h3>
-				<p class="text-gray-600">
-				</p>
-					Something here about Windows  and how I can make it work better.
+				<p class="text-gray-600"></p>
+				While most people thing running Windows, or systems that utilize proprietary
+				software, makes using open source a foreign concept, that's not close to being
+				true. In the early days I learned how to run the Apache webserver in Windows
+				and an alternative to Microsoft's own IIS web service. Most build, and DevOps
+				concepts can be applied to Windows to provide a more controlled, and secured,
+				environment.
 			</div>
 		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.5} scale={true}>
+
+		<ScrollReveal client:idle delay={0.7} scale={true}>
 			<div
 				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
 			>
@@ -80,17 +145,23 @@ import { Icon } from "astro-icon/components";
 					<Icon
 						name="tabler:brand-ansible"
 						class="w-6 h-6 text-gray-900"
+						se
 						aria-hidden="true"
 					/>
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">Ansible</h3>
 				<p class="text-gray-600">
-					Ansible rules, okay?
+					Ansible is a tool that defines a systems' configuration saved as a set
+					of files that defines all aspects of its setup; from what applications
+					are installed, to how the system is configured, etc. This idea of
+					Infrastructure as Code (IaC) insures systems will always be in line
+					with how it is configured within Ansible, which avoides errors
+					introduced manually, and providing reproduce-able systems.
 				</p>
 			</div>
 		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.6} scale={true}>
+
+		<ScrollReveal client:idle delay={0.8} scale={true}>
 			<div
 				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
 			>
@@ -105,14 +176,17 @@ import { Icon } from "astro-icon/components";
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">SEO</h3>
 				<p class="text-gray-600">
-					Search engine optimization (SEO) is a big deal if you have a website and want to be found by Google and other search providers. There are some basic steps to take, and most web frameworks include a lot of bits already, but it's always good to review and update settings to be up to date.
+					Search engine optimization (SEO) is a big deal if you have a website
+					and want to be found by Google and other search providers. There are
+					some basic steps to take, and most web frameworks include a lot of
+					bits already, but it's always good to review and update settings to be
+					up to date.
 				</p>
 			</div>
 		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.7} scale={true}>
-			<a
-				href="/example"
+
+		<ScrollReveal client:idle delay={0.9} scale={true}>
+			<div
 				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
 			>
 				<div
@@ -126,73 +200,37 @@ import { Icon } from "astro-icon/components";
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">Documentation</h3>
 				<p class="text-gray-600">
-					A lot of what I do is discovery, figuring things out while building new systems and environments, and documenting what is done so it can be done correctly the next time is critical, which is why documentation is a part of every project.
+					A lot of what I do is discovery, figuring things out while building
+					new systems and environments, and documenting what is done so it can
+					be done correctly the next time is critical, which is why
+					documentation is a part of every project.
 				</p>
-			</a>
+			</div>
 		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.7} scale={true}>
-			<a
-				href="/example"
-				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+
+	<ScrollReveal client:idle delay={1.0} scale={true}>
+		<div
+			class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+		>
+			<div
+				class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
 			>
-				<div
-					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
-				>
-					<Icon
-						name="tabler:lock"
-						class="w-6 h-6 text-gray-900"
-						aria-hidden="true"
-					/>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Security</h3>
-				<p class="text-gray-600">
-				  I started my tech career researching security with the aim of setting up servers and services as securely as I could, but it's an ongoing process that is always changing. From doing basic pen-testing scans to configuring web servers and other network services to behave and protect; it's all part of the fun.	
-				</p>
-			</a>
-		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.7} scale={true}>
-			<a
-				href="/example"
-				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
-			>
-				<div
-					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
-				>
-					<Icon
-						name="tabler:blocks"
-						class="w-6 h-6 text-gray-900"
-						aria-hidden="true"
-					/>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Builds/Continous integration</h3>
-				<p class="text-gray-600">
-					Builds with continuous integration is a DevOps development practice where developers regularly merge their code changes into a central repository. A pipeline is setup to provide the steps and access for a service like Jenkins, GitHub Actions or Azure CI/CD data pipelines provide this framework.
-				</p>
-			</a>
-		</ScrollReveal>
-		
-		<ScrollReveal client:idle delay={0.7} scale={true}>
-			<a
-				href="/example"
-				class="block p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
-			>
-				<div
-					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
-				>
-					<Icon
-						name="tabler:exclamation-circle"
-						class="w-6 h-6 text-gray-900"
-						aria-hidden="true"
-					/>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">But wait,there's more...</h3>
-				<p class="text-gray-600">
-					One size does not fit all, and I'm cognizant of the fact that there are virtually infinite ways to solve technical issues, which is why I'm able to take a projects requirements and break it down to steps we can take. Let me know what you're trying to accomplish, from there we will assist in archiving your goals.
-				</p>
-			</a>
-		</ScrollReveal>
-		
-	</div>
+				<Icon
+					name="tabler:exclamation-circle"
+					class="w-6 h-6 text-gray-900"
+					aria-hidden="true"
+				/>
+			</div>
+			<h3 class="text-xl font-semibold text-gray-900 mb-2">
+				But wait,there's more...
+			</h3>
+			<p class="text-gray-600">
+				One size does not fit all, and I'm cognizant of the fact that there are
+				virtually infinite ways to solve technical issues, which is why I'm able
+				to take a projects requirements and break it down to steps we can take.
+				Let me know what you're trying to accomplish, from there we will assist
+				in archiving your goals.
+			</p>
+		</div>
+	</ScrollReveal>
 </section>
