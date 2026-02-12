@@ -1,7 +1,7 @@
 #!/bin/bash
 
-dbx_name=alpine
 dbx_conf=.dbx.ini
+dbx_name=$(cat ${dbx_conf}|head -n1|cut -d"[" -f2|cut -d"]" -f1)
 
 echo "[+] dbx"
 
