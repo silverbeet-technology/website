@@ -42,4 +42,5 @@ export default defineConfig({
 		domains: [],
 		remotePatterns: [],
 	},
+	trailingSlash: 'always', // or 'never' if you went without tralingSlash
 });
