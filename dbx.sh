@@ -9,6 +9,12 @@ echo -n "  [-] checking if distrobox is installed..."
 command -v distrobox >/dev/null 2>&1 || { echo >&2 "[!] distrobox not installed, aborting."; exit 1; }
 echo "ok"
 
+echo -n "  [-] checking for .dbx.ini..."
+if [ ! '.dbx.ini' ]; then
+   echo "[!] .dbx.ini not found, aborting."; exit 1
+fi
+echo "ok"
+
 if [[ $1 == 'remove' ]]; then
   echo -n "  [-] removing distrobox: ${dbx_name} checking..."
   dbx_check=$(distrobox list | grep ${dbx_name})
