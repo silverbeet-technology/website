@@ -77,10 +77,45 @@ import { Icon } from "astro-icon/components";
 						aria-hidden="true"
 					/>
 				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Containerization with Docker</h3>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">
+					Containerization with Docker
+				</h3>
 				<p class="text-gray-600">
-					Containerization brings flexibility and consistency across environments. I can help convert and package applications in Docker containers to create reproducible infrastructure, which uses  the Infrastructure as Code (IoC) ideals for scalable and reproduceable deployments. This leads to easier testing,  more predictable deployments with better infrastructure visibility since all the code is open and readable.
+					Containerization brings flexibility and consistency across
+					environments. I can help convert and package applications in Docker
+					containers to create reproducible infrastructure, which uses the
+					Infrastructure as Code (IaC) ideals for scalable and reproduceable
+					deployments. This leads to easier testing, more predictable
+					deployments with better infrastructure visibility since all the code
+					is open and readable.
 					<br /><br />
+				</p>
+			</div>
+		</ScrollReveal>
+
+		<ScrollReveal client:idle delay={0.7} scale={true}>
+			<div
+				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+			>
+				<div
+					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
+				>
+					<Icon
+						name="tabler:brand-ansible"
+						class="w-6 h-6 text-gray-900"
+						se
+						aria-hidden="true"
+					/>
+				</div>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">
+					Infrastructure as Code with Ansible
+				</h3>
+				<p class="text-gray-600">
+					Manual server setup invites mistakes. Using Ansible, I define
+					infrastructure declaratively so that configurations are repeatable and
+					thus reproduceable, documentation becomes inherent in the code itself
+					and the rollouts are reliable. This approach ensures systems stay in
+					sync and they become immutable, only changed via Ansible runs.
 				</p>
 			</div>
 		</ScrollReveal>
@@ -102,13 +137,11 @@ import { Icon } from "astro-icon/components";
 					SSL Certificates
 				</h3>
 				<p class="text-gray-600">
-					Secure socket layer (SSL) certificates provide encryption, and thus
-					security, but they also provide important information for verifying
-					the owner of a website while encrypting web traffic with SSL/TLS.
-					Buying SSL certificates used to be relatively expensive and require
-					manual updating when they expire. New projects such as Let's Encrypt
-					allow anyone to install free SSL certificates which are renewed
-					automatically.
+					Secure Web Traffic with confidence, I can setup and automate SSL/TLS
+					certificate issuance from online providers. This involves implementing
+					Let’s Encrypt for automation, which ensures the idea of HTTPS
+					everywhere. Proper certificates not only protect data in transit, they
+					build trust with users while making the Ineternet safer for everyone.
 				</p>
 			</div>
 		</ScrollReveal>
@@ -121,44 +154,20 @@ import { Icon } from "astro-icon/components";
 					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
 				>
 					<Icon
-						name="tabler:brand-windows"
+						name="tabler:file-text"
 						class="w-6 h-6 text-gray-900"
 						aria-hidden="true"
 					/>
 				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Windows</h3>
-				<p class="text-gray-600"></p>
-				While most people thing running Windows, or systems that utilize proprietary
-				software, makes using open source a foreign concept, that's not close to being
-				true. In the early days I learned how to run the Apache webserver in Windows
-				and an alternative to Microsoft's own IIS web service. Most build, and DevOps
-				concepts can be applied to Windows to provide a more controlled, and secured,
-				environment.
-			</div>
-		</ScrollReveal>
-
-		<ScrollReveal client:idle delay={0.7} scale={true}>
-			<div
-				class="p-6 bg-white rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
-			>
-				<div
-					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
-				>
-					<Icon
-						name="tabler:brand-ansible"
-						class="w-6 h-6 text-gray-900"
-						se
-						aria-hidden="true"
-					/>
-				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Ansible</h3>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">
+					Documentation & Strategy
+				</h3>
 				<p class="text-gray-600">
-					Ansible is a tool that defines a systems' configuration saved as a set
-					of files that defines all aspects of its setup; from what applications
-					are installed, to how the system is configured, etc. This idea of
-					Infrastructure as Code (IaC) insures systems will always be in line
-					with how it is configured within Ansible, which avoides errors
-					introduced manually, and providing reproduce-able systems.
+					Good documentation turns knowledge into an asset. I include clear
+					documentation with every engagement so you always know how the systems
+					are built, how things are configured, and how to updates and
+					migrations occur in order to maintain or extend your infrastructure.
+					I've always shared knowledge in an open, and accessible way.
 				</p>
 			</div>
 		</ScrollReveal>
@@ -178,11 +187,12 @@ import { Icon } from "astro-icon/components";
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">SEO</h3>
 				<p class="text-gray-600">
-					Search engine optimization (SEO) is a big deal if you have a website
-					and want to be found by Google and other search providers. There are
-					some basic steps to take, and most web frameworks include a lot of
-					bits already, but it's always good to review and update settings to be
-					up to date.
+					Search engine optimization (SEO) is important so that your website and
+					information can be discovered by Google and other search providers.
+					There are some basic steps to take, and most web frameworks include a
+					lot of bits already, but it's always good to review and update
+					settings to be up to date.
+					<br /><br />
 				</p>
 			</div>
 		</ScrollReveal>
@@ -195,17 +205,18 @@ import { Icon } from "astro-icon/components";
 					class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4"
 				>
 					<Icon
-						name="tabler:file-text"
+						name="tabler:brand-windows"
 						class="w-6 h-6 text-gray-900"
 						aria-hidden="true"
 					/>
 				</div>
-				<h3 class="text-xl font-semibold text-gray-900 mb-2">Documentation</h3>
+				<h3 class="text-xl font-semibold text-gray-900 mb-2">Windows</h3>
 				<p class="text-gray-600">
-					A lot of what I do is discovery, figuring things out while building
-					new systems and environments, and documenting what is done so it can
-					be done correctly the next time is critical, which is why
-					documentation is a part of every project.
+					While most people think running Windows, or systems that utilize
+					proprietary software, makes using open source a foreign concept,
+					that's not true. Early I learned how to run
+					the Apache webserver in Windows and an alternative to Microsoft's own IIS. Applying these concepts to
+					Windows provides a more controlled, and secured environment.
 				</p>
 			</div>
 		</ScrollReveal>
@@ -224,14 +235,10 @@ import { Icon } from "astro-icon/components";
 					/>
 				</div>
 				<h3 class="text-xl font-semibold text-gray-900 mb-2">
-					But wait,there's more...
+					Custom Solutions
 				</h3>
 				<p class="text-gray-600">
-					One size does not fit all, and I'm cognizant of the fact that there
-					are virtually infinite ways to solve technical issues, which is why
-					I'm able to take a projects requirements and break it down to steps we
-					can take. Let me know what you're trying to accomplish, from there we
-					will assist in archiving your goals.
+					But wait,there's more... no two problems are the same, so if you have a specific challenge not listed here, let’s talk — I enjoy breaking down problems and building tailored solutions that fit your context. I'm cognizant of the fact that there are virtually infinite ways to solve technical issues, and I enjoy figuring those out to help clients achieve their goals.
 				</p>
 			</div>
 		</ScrollReveal>
