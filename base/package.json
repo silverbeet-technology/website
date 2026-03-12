@@ -16,12 +16,12 @@
 		"check": "npm run type-check && npm run lint && npm run format:check"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^4.3.13",
-		"@astrojs/react": "^4.4.2",
-		"@astrojs/sitemap": "^3.7.0",
+		"@astrojs/mdx": "^5.0.0",
+		"@astrojs/react": "^5.0.0",
+		"@astrojs/sitemap": "^3.7.1",
 		"@iconify-json/tabler": "^1.2.26",
 		"@tailwindcss/vite": "^4.1.18",
-		"astro": "^5.17.2",
+		"astro": "^6.0.4",
 		"astro-icon": "^1.1.5",
 		"framer-motion": "^12.24.7",
 		"react": "^19.2.3",
@@ -37,7 +37,7 @@
 		"eslint-plugin-astro": "^0.32.0",
 		"eslint-plugin-react": "^7.34.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"prettier": "3.8.1",
+		"prettier": "^3.2.5",
 		"prettier-plugin-astro": "^0.13.0",
 		"terser": "^5.46.0"
 	}
