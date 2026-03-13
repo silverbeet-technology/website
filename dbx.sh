@@ -9,6 +9,13 @@ echo -n "  [-] checking if distrobox is installed..."
 command -v distrobox >/dev/null 2>&1 || { echo >&2 "[!] distrobox not installed, aborting."; exit 1; }
 echo "ok"
 
+echo -n "  [-] checking that docker or podman is running..."
+if [[ ! $(ps -ef | grep -c docker || grep -c podman) > 1 ]]; then
+    echo; echo "  [!] docker or podman not running, aborting."; exit 1;
+else
+	echo "ok"
+fi
+
 echo -n "  [-] checking for .dbx.ini..."
 if [ ! '.dbx.ini' ]; then
    echo "[!] .dbx.ini not found, aborting."; exit 1
@@ -38,8 +45,7 @@ if [[ $? != 0 ]]; then
   distrobox enter -n ${dbx_name}
 elif [[ $dbx_check ]]; then
   echo "  [-] distrobox: ${dbx_name} found, entering..."
-  distrobox enter -n ${dbx_name} 
+  distrobox enter -n ${dbx_name}
 fi
 
 exit 0
-

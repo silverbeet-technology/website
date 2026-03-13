@@ -4,48 +4,77 @@ This is the code for the [Silverbeet Technology](https://silverbeet.tech/) websi
 
 ## Installation
 
-To build the Silverbeet site to base a project off of, install `npm` and `git` on your system and follow these steps
+To build the Silverbeet site to base a project off of, install the following required packages on your system
 
-* Clone the repository
+- git
+- make
+- npm
+
+* Check-out the code by cloning the repository
 
 ```shell
 git clone https://github.com/silverbeet-technology/website.git
-cd website
+cd website/base
 ```
 
-* Install dependencies
+- Install the Astro npm packages and dependencies, using my Makefile
 
 ```shell
-npm install
+make install
 ```
 
-* Start the development server
+- Start the development server
 
 ```shell
-npm run dev
+make dev
 ```
 
-* Open your browser Navigate to [localhost:4321](http://localhost:4321)
+- Open your browser Navigate to [localhost:4321](http://localhost:4321) to view the current site
 
-* More information on using this theme is available on their GitHub page: [jonnysmillie/astro-base](https://github.com/jonnysmillie/astro-base)
+- Once you make changes in your code editor and save anything, it'll auto refresh the site in your browser showing you the changes almost immediately
+
+- More information on using this theme is available on their GitHub page: [jonnysmillie/astro-base](https://github.com/jonnysmillie/astro-base)
 
 ## Distrobox
 
-I use [Distrobox](https://distrobox.it) extensively, basically it allows you to run a Linux environment as a container, and I use that as my development system to configure and build my websites, this way I can install required packages and not have to worry about poluting the host system. The only requrements are a container framework (Docker, Podman, etc), then installing Distrobox so it works together. After that you can try it out.
+I do all of my work in Linux, if you do too you may want to try my method of using [Distrobox](https://distrobox.it) to create a self-contained, secure, development environment.
 
-* First, edit the file `.dbx.ini` and edit it how you need, I run a minimal Alpine Linux image with the tools I need pre-installed.
+I use Distrobox pretty extensively, it's a great tool that allows you to run a Linux environment in a container, I use it as my development environment, this way I can install required packages and not have to worry about polluting the host system.
+
+The only requirements are a container framework ([Docker](https://www.docker.com/), [Podman](https://podman.io/), etc), and Distrobox so it works together. After that you can try it out.
+
+- Install the required packages
+
+```shell
+docker (or Podman)
+distrobox
+```
+
+- Edit or review the file `.dbx.ini`, the defaults will work fine. I run a minimal Linux image with the tools I need pre-installed, there are a few options in the file you may find useful.
 
 ```shell
 vi .dbx.ini
 ```
 
-* Then run it, the script calls that ini file as a configuration file and once the container is up and running it'll enter the environment
+- Then run the script which calls that file and once the container is up and running it'll enter the environment
 
 ```shell
 ./dbx.sh
 ```
 
-* Currently the only option I have in the script is 'remove' to remove the container if you need it cleaned up
+- Follow the steps above in the Installation section to install the Astro requirements and start the server. When you're done simply type `exit` to leave the environment
+
+```shell
+exit
+```
+
+- If you want to enter the environment again just run the script again, if the container is still there, it'll configure everything and drop you in as it did before
+
+```shell
+./dbx.sh
+```
+
+- Currently the only option I have in the script is `remove` to remove the container if you need it cleaned up
 
 ```shell
 ./dbx.sh remove
@@ -55,12 +84,8 @@ vi .dbx.ini
 
 We use [tabler icons](https://tabler.io/icons), and you should too!
 
-## Eratta
+## License
 
-Once I had the site setup, before I could successfully build it I had to install another npm package:
-
-```shell
-npm install -D terser
-```
+[MIT License](https://github.com/silverbeet-technology/website/blob/main/LICENSE)
 
 ### Thanks
