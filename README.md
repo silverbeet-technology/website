@@ -62,7 +62,13 @@ vi .dbx.ini
 ./dbx.sh
 ```
 
-- Follow the steps above in the Installation section to install the Astro requirements and start the server. When you're done simply type `exit` to leave the environment
+- Follow the prompts and once it drops you into the new environment, change into the `base` directory
+
+```shell
+cd base
+```
+
+- Then follow the steps above in the Installation section to install the Astro requirements and start the server. When you're done simply type `exit` to leave the environment
 
 ```shell
 exit
