@@ -1,0 +1,163 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ScrollReveal from "../components/ScrollReveal.tsx";
+import { SITE } from "../config/site.mjs";
+---
+
+<Layout
+	title={`Colophon | ${SITE.title}`}
+	description="The tools, software and services I use to build and run this site"
+	canonicalURL={`${SITE.url}/colophon/`}
+>
+	<Header />
+	<main id="main-content" role="main">
+		<section class="max-w-4xl mx-auto px-4 py-20">
+			<ScrollReveal client:idle>
+				<h1 class="text-5xl font-bold text-gray-900 mb-4">Colophon</h1>
+			</ScrollReveal>
+			<ScrollReveal client:load delay={0.1}>
+				<p class="text-xl text-gray-600 mb-12">
+					The tools, software and services I use to build and run this site
+				</p>
+			</ScrollReveal>
+
+			<div class="prose prose-lg max-w-none">
+			<ScrollReveal client:load delay={0.2}>
+				<h2>Overview</h2>
+				<p>
+					Having built built sites for a long time, I've always enjoy learning
+					what makes sites tick to really understand the tools and methods used.
+					One site,
+					<a
+						href="https://builtwith.com/"
+						class="text-gray-600 hover:text-gray-900 transition-colors"
+						>BuiltWith</a
+					> attempts to break that down on the fly to show you those breadcrumbs,
+					and I've made it a habit to list what I use on my sites, so here are the
+					tools, software and services I use to build and run Silverbeet.
+				</p>
+			</ScrollReveal>
+
+			<ScrollReveal client:load delay={0.2}>
+				<h3>Colophon</h3>
+				<ul>
+					<h4>Tools & Software</h4>
+					<ul>
+						<li>
+							<a
+								href="https://www.alpinelinux.org/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>Alpine Linux</a
+							>: a security-oriented, lightweight Linux distribution based on
+							musl libc and busybox
+						</li>
+						<li>
+							<a
+								href="https://astro.build/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>Astro</a
+							>: a javascript web framework for content-driven websites
+						</li>
+						<li>
+							<a
+								href="https://docker.com/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>Docker</a
+							>: an open platform for developing, shipping, and running
+							applications. Bonus, here's my Docker
+							<a
+								href="https://github.com/silverbeet-technology/website/blob/main/compose.yml"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>compose.yml</a
+							>: file for this site, and its associated
+							<a
+								href="https://github.com/silverbeet-technology/website/blob/main/.env"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>.env</a
+							> environment file it reads during startup
+						</li>
+						<li>
+							<a
+								href="https://traefik.io/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>Traefik</a
+							>: an open-source reverse proxy and load balancer for HTTP and
+							TCP-based applications that can automatically retrieve TLS
+							certificates from services like Let's Encrypt
+						</li>
+						<li>
+							<a
+								href="https://zed.dev/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>Zed</a
+							>: a relatively new Open Source IDE, minimal code editor that I
+							really enjoy
+						</li>
+					</ul>
+
+					<ScrollReveal client:load delay={0.2}>
+						<h4>Services</h4>
+						<ul>
+							<li>
+								<a
+									href="https://fastmail.com/"
+									class="text-gray-600 hover:text-gray-900 transition-colors"
+									>Fastmail</a
+								>: fast, private email hosting for you or your business
+							</li>
+							<li>
+								<a
+									href="https://github.com/"
+									class="text-gray-600 hover:text-gray-900 transition-colors"
+									>GitHub</a
+								>: hosted git for source control in an open environment
+							</li>
+							<li>
+								<a
+									href="https://letsencrypt.org/"
+									class="text-gray-600 hover:text-gray-900 transition-colors"
+									>Let's Encrypt</a
+								>: a nonprofit providing free TLS certificates to more than 700M
+								websites
+							</li>
+							<li>
+								<a
+									href="https://porkbun.com/"
+									class="text-gray-600 hover:text-gray-900 transition-colors"
+									>Porkbun</a
+								>: for domain name registration and DNS service
+							</li>
+							<li>
+								<a
+									href="https://vultr.com/"
+									class="text-gray-600 hover:text-gray-900 transition-colors"
+									>Vultr</a
+								>: worldwide cloud servers
+							</li>
+						</ul>
+					</ScrollReveal>
+
+					<ScrollReveal client:load delay={0.2}>
+						<h3>Interesting?</h3>
+						<p>
+							I hope that was interesting, for those following along, here's the
+							<a
+								href="https://builtwith.com/silverbeet.tech/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>BuiltWith Silverbeet page</a
+							> which lists a few extraneous bits it found running the site. If you'd like to discuss your site, application or infrastructure and how it could be setup, feel free to
+							<a
+								href="/contact/"
+								class="text-gray-600 hover:text-gray-900 transition-colors"
+								>contact</a
+							> me to start a dialog.
+						</p>
+					</ScrollReveal>
+				</ul>
+			</ScrollReveal>
+		</section>
+		<Footer />
+	</main>
+</Layout>

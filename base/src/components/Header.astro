@@ -32,15 +32,6 @@ import { Icon } from "astro-icon/components";
 
 		<!-- Desktop navigation -->
 		<ul class="hidden md:flex items-center gap-6" role="list">
-			<!--<li>
-				<a
-					href="/services/"
-					class="text-gray-600 hover:text-gray-900 transition-colors"
-					aria-current={Astro.url.pathname === "/services" ? "page" : undefined}
-				>
-					Services
-				</a>
-			</li>-->
 			<li>
 				<a
 					href="/about/"
@@ -48,6 +39,15 @@ import { Icon } from "astro-icon/components";
 					aria-current={Astro.url.pathname === "/about" ? "page" : undefined}
 				>
 					About
+				</a>
+			</li>
+			<li>
+				<a
+					href="/colophon/"
+					class="text-gray-600 hover:text-gray-900 transition-colors"
+					aria-current={Astro.url.pathname === "/services" ? "page" : undefined}
+				>
+					Colophon
 				</a>
 			</li>
 			<li>
