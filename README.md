@@ -9,6 +9,7 @@ To build the Silverbeet site to base a project off of, install the following req
 - git
 - make
 - npm
+- nodejs
 
 * Check-out the code by cloning the repository
 
@@ -84,6 +85,40 @@ exit
 
 ```shell
 ./dbx.sh remove
+```
+
+## NVM
+
+If you're running on Debian or similar, it may be running an older version of `nodejs` and the astro commands may fail. Here's how to use `nvm` to install specific versions of nodejs
+
+* Download and install nvm
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+```
+
+* Logout and log back in, or in lieu of restarting the shell
+
+```shell
+\. "$HOME/.nvm/nvm.sh"
+```
+
+* Download and install a version of Node.js, 24 is currently the latest
+
+```shell
+nvm install 24
+```
+
+* Verify the Node.js version
+
+```shell
+node -v # Should print "v24.15.0".
+```
+
+* Verify npm version
+
+```shell
+npm -v # Should print "11.12.1".
 ```
 
 ## Icons
