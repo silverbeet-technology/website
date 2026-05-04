@@ -6,7 +6,7 @@ dbx_name=$(cat ${dbx_conf}|head -n1|cut -d"[" -f2|cut -d"]" -f1)
 echo "[+] dbx"
 
 echo -n "  [-] checking if distrobox is installed..."
-command -v distrobox >/dev/null 2>&1 || { echo >&2 "[!] distrobox not installed, aborting."; exit 1; }
+command -v distrobox >/dev/null 2>&1 || { echo; echo >&2 "  [!] distrobox not installed, aborting."; exit 1; }
 echo "ok"
 
 echo -n "  [-] checking that docker or podman is running..."
@@ -18,7 +18,7 @@ fi
 
 echo -n "  [-] checking for .dbx.ini..."
 if [ ! '.dbx.ini' ]; then
-   echo "[!] .dbx.ini not found, aborting."; exit 1
+   echo; echo "  [!] .dbx.ini not found, aborting."; exit 1
 fi
 echo "ok"
 
