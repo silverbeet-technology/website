@@ -24,3 +24,79 @@
 	clip: auto;
 	white-space: normal;
 }
+
+.commit-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+
+	padding: 2px 10px;
+	border-radius: 999px;
+
+	font-family: ui-monospace, monospace;
+	font-size: 12px;
+	line-height: 1.5;
+
+	background: color-mix(in srgb, currentColor 10%, transparent);
+	border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+	color: inherit;
+	text-decoration: none;
+
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.commit-badge:hover {
+	background: color-mix(in srgb, currentColor 18%, transparent);
+	border-color: color-mix(in srgb, currentColor 45%, transparent);
+
+	transform: translateY(-1px);
+}
+
+/* subtle glow layer */
+.commit-badge::before {
+	content: "";
+	position: absolute;
+	inset: -4px;
+	border-radius: 999px;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+
+	background: radial-gradient(
+		circle,
+		color-mix(in srgb, currentColor 35%, transparent),
+		transparent 70%
+	);
+
+	filter: blur(6px);
+	z-index: -1;
+}
+
+.commit-badge:hover::before {
+	opacity: 1;
+}
+
+/* GitHub icon animation */
+.github-icon {
+	display: inline-block;
+	transition:
+		transform 0.25s ease,
+		filter 0.25s ease;
+	transform-origin: center;
+}
+
+.commit-badge:hover .github-icon {
+	transform: rotate(-10deg) scale(1.15);
+	filter: drop-shadow(
+		0 0 6px color-mix(in srgb, currentColor 40%, transparent)
+	);
+}
+
+.commit-badge.copied {
+	background: color-mix(in srgb, limegreen 20%, transparent);
+	border-color: color-mix(in srgb, limegreen 60%, transparent);
+}
+
+.commit-badge.copied .github-icon {
+	transform: rotate(-10deg) scale(1.2);
+}
