@@ -16,12 +16,12 @@
 		"check": "npm run type-check && npm run lint && npm run format:check"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^5.0.4",
-		"@astrojs/react": "^5.0.4",
-		"@astrojs/sitemap": "^3.7.2",
+		"@astrojs/mdx": "^7.0.0",
+		"@astrojs/react": "^6.0.0",
+		"@astrojs/sitemap": "^3.7.3",
 		"@iconify-json/tabler": "^1.2.26",
 		"@tailwindcss/vite": "^4.1.18",
-		"astro": "^6.2.2",
+		"astro": "^7.0.3",
 		"astro-icon": "^1.1.5",
 		"framer-motion": "^12.24.7",
 		"react": "^19.2.3",
@@ -40,5 +40,9 @@
 		"prettier": "^3.2.5",
 		"prettier-plugin-astro": "^0.13.0",
 		"terser": "^5.46.0"
+	},
+	"allowScripts": {
+		"@parcel/watcher@2.5.1": true,
+		"esbuild@0.28.1": true
 	}
 }

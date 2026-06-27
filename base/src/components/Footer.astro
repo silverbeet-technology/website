@@ -23,16 +23,11 @@ import { Icon } from "astro-icon/components";
 							rel="noopener noreferrer"
 							aria-label="Our location on OpenStreetMap (opens in new tab)"
 						>
-							<Icon
-								name="tabler:world"
-								class="w-5 h-5"
-								aria-hidden="true"
-							/>
+							<Icon name="tabler:world" class="w-5 h-5" aria-hidden="true" />
 							<span>
-								<p class="text-gray-600">
-								5830 East 2nd Street, Suite 7000</p>
+								<p class="text-gray-600">5830 East 2nd Street, Suite 7000</p>
 							</span>
-							</a>
+						</a>
 					</li>
 					<!--<li>
 						<a
@@ -68,6 +63,7 @@ import { Icon } from "astro-icon/components";
 							</span>
 						</a>
 					</li>
+				</ul>
 			</div>
 
 			<div>
@@ -165,7 +161,12 @@ import { Icon } from "astro-icon/components";
 			</div>
 		</div>
 		<div class="pt-8 border-t border-gray-200 text-center text-gray-600">
-			<p>&copy; {new Date().getFullYear()} All rights reserved - Site built with <a href="https://astro.build">Astro</a> - <a href="https://github.com/silverbeet-technology/website">Source code</a></p>
+			<p>
+				&copy; {new Date().getFullYear()} All rights reserved - Site built with <a
+					href="https://astro.build">Astro</a
+				> - <a href="https://github.com/silverbeet-technology/website"
+					>Source code</a>
+			</p>
 		</div>
 	</div>
 </footer>

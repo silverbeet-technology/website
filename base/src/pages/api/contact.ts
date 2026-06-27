@@ -14,6 +14,15 @@ import {
 } from "../../utils/validation";
 import { ValidationError, handleError, logError } from "../../utils/errors";
 
+export const GET = () => {
+	return new Response("Method Not Allowed", {
+		status: 405,
+		headers: {
+			Allow: "POST",
+		},
+	});
+};
+
 export const POST: APIRoute = async ({ request }) => {
 	try {
 		const formData = await request.formData();
